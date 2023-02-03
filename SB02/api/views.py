@@ -25,10 +25,10 @@ def student_create(request):
         json_data=JSONRenderer().render(ser.errors)
         return HttpResponse(json_data,content_type='application/json')
 
-    if request.method=="GET":
-        stu=Student.objects.all()
-        ser=StudentSerializer(stu,many=True)
-        json_data=JSONRenderer().render(data)        
+    # if request.method=="GET":
+    #     stu=Student.objects.all()
+    #     ser=StudentSerializer(stu,many=True)
+    #     json_data=JSONRenderer().render(data)        
 
         
 
