@@ -4,8 +4,8 @@ from api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('stud/',views.StudentList.as_view()),
-    #path('stud/',views.StudentCreate.as_view()),
+    #path('stud/',views.StudentList.as_view()),
+    path('stud/',views.StudentCreate.as_view()),
     #path('stud/<int:pk>/',views.StudentRetrieve.as_view()),
     #path('stud/<int:pk>/',views.StudentUpdate.as_view()),
     #path('stud/<int:pk>/',views.StudentDestroy.as_view()),
